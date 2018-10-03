@@ -1,0 +1,53 @@
+
+.btn {
+  border-radius: 20px;
+  min-width: 20px;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+.btn-outline-primary, .btn-outline-primary-b:hover {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+}
+.btn-outline-primary-b, .btn-outline-primary:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #1ac6ff;
+}
+.btn-primary {
+  color: #1ac6ff;
+  background-color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #00b8e6;
+  box-shadow: 0 4px 8px 0 rgba(0, 184, 230, 0.2), 0 6px 20px 0 rgba(0, 184, 230, 0.19);
+}
+nav {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.navbar-light {
+    background-color: #1ac6ff !important;
+}
+.navbar-brand {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #000000;
+}
+.navbar-nav .nav-link {
+    margin: 5px 15px;
+    padding-right: 12.5px !important;
+    padding-left: 12.5px !important;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #ffffff !important;
+}
+.navbar-nav .nav-link:hover {
+    background-color: rgba(256, 256, 256, 0.2)
+}

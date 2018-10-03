@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* max-width: calc(100vw-15px); */
+    width: calc(100% - 30px);
+    margin: 10px;
+    padding: 5px;
+}
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.nav-link, .btn {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a {
+    color: #1ac6ff;
+}
+a:hover {
+    text-decoration: none;
+    color: #1ac6ff;
+}
+.btn {
+    border-radius: 20px;
+    min-width: 20px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+.btn-outline-primary, .btn-outline-primary-b:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: #1ac6ff;
+}
+.btn-outline-primary-b, .btn-outline-primary:hover {
+    border: 2px solid #1ac6ff;
+    background-color: #ffffff;
+    color: #1ac6ff;
+}
+.btn-primary {
+    background-color: #1ac6ff;
+}
+.btn-primary:hover {
+    background-color: #00b8e6;
+    box-shadow: 0 4px 8px 0 rgba(0, 184, 230, 0.2), 0 6px 20px 0 rgba(0, 184, 230, 0.19);
+}
+.big-title {
+    margin-bottom: 4.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Nunito',sans-serif;
+    line-height: 1.25;
+    color: #1ac6ff;
+    font-weight: 600;
+}
+.big-title::after {
+    content: "";
+    width: 5%;
+    min-width: 40px;
+    display: block;
+    border-radius: 50px;
+    border-bottom: 6px solid #1ac6ff;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* .active,
+.navbar-nav .nav-link:active {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.8) !important;
+} */

@@ -1,0 +1,17 @@
+<div class="col-xs-12">
+  <div class="row"
+    *ngFor="let project of projects">
+    <div class="col-sm-6 project-container">
+      <h4>{{ project.title }}</h4>
+      <p class="project-desc">
+        {{ project.description }}<br>
+        <span>{{ project.tags }}</span>
+      </p>
+      <a [href]="project.projectUrl">Link to project</a>
+    </div>
+    <div class="col-sm-6 project-img">
+      <img src="{{ project.projectPlaceholder }}" alt="{{ project.title }}" class="img-fluid">
+    </div>
+  </div>
+  <!-- <app-projects-detail></app-projects-detail> -->
+</div>
