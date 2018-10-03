@@ -1,11 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat, sans-serif';
     /* max-width: calc(100vw-15px); */
     width: calc(100% - 30px);
     margin: 10px;
     padding: 5px;
+}
+h1, h2, h3 {
+    font-family: 'Fjalla One, sans-serif';
+}
+p {
+    font-size: 14px;
 }
 .container-fluid {
     margin: 0 !important;

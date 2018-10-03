@@ -1,9 +1,23 @@
-
-.project-img {
+.col-sm-4 {
+  position: relative;
+}
+.project-container {
+  position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  bottom: 0;
+  width: 93%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.25);
+  color: #ffffff;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
 }
 ngb-carousel, .carousel-item{
   max-height: 500px !important;
@@ -12,4 +26,5 @@ ngb-carousel, .carousel-item{
 
 @media screen and (min-width:768px) {
   .project-container { min-height: 300px;}
+  .project-img { max-height: 400px; }
 }

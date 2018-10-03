@@ -1,8 +1,14 @@
 
 .banner {
     max-height: 200px;
-    background: linear-gradient(to bottom right, rgba(26, 198, 255, 0.8), rgb(256, 256, 256));
+    background: 
+        /* linear-gradient(to bottom right, rgba(26, 198, 255, 0.8), rgb(256, 256, 256)) */
+        url('https://res.cloudinary.com/jaredomamo/image/upload/v1538587894/practice/background1.jpg');
     background-attachment: fixed;
+    background-size: cover;
+}
+.banner-text {
+    color: #ffffff;
 }
 .banner-text h2 {
     font-size: 16px !important;
@@ -29,6 +35,20 @@
     font-weight: 600;
     margin: 1px 10px;
 }
+/* #########  ABOUT   ############# */
+#about {
+    position: relative;
+    min-height: 300px;
+    padding-top: 20px;
+    background-image: url('https://res.cloudinary.com/jaredomamo/image/upload/v1538587885/practice/blog2.jpg');
+    background-attachment: fixed;
+}
+#about .row .col-sm-6:last-child {
+    position: absolute;
+    background-color: #ffffff;
+    bottom: 0;
+    right: 20px;
+}
 
 #new-project {
     padding: 20px;
@@ -47,12 +67,29 @@ footer {
     /* section {display: flex; flex-direction: column; justify-content: center; align-items: center;} */
     section {margin: auto;}
     section, .banner { min-height: 400px; }
-    .banner-text { margin: 2px 15px; }
+    .banner-text {
+        margin: 5px 15px;
+        width: 40%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.25);
+        font-weight: 500;
+     }
     .banner-text h2 { font-size: 20px !important; }
     .banner-text p { font-size: 14px !important; }
     .banner-footer { margin: 2px 30px; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; position: absolute; bottom: -50px; }
     .banner-4 { width: 30%; }
-    #about {margin-top: 280px;}
+    #about { margin-top: 280px; min-height: 500px; background-size: cover; background-position: left; background-repeat: no-repeat;}
+    #about .row div:last-child { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        width: 30%;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+    }
     #new-project div, #new-project .btn {display: inline-block;}
     #new-project .btn {float: right;}
 }
