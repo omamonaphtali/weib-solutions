@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
 }
+ngb-carousel, .carousel-item{
+  max-height: 500px !important;
+  overflow: hidden;
+}
 
 @media screen and (min-width:768px) {
   .project-container { min-height: 300px;}
