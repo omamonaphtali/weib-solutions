@@ -1,5 +1,5 @@
 <div class="col-xs-12">
-  <div class="row">
+  <div class="row text-center">
     <div class="col-sm-4" *ngFor="let project of projects">
       <img src="{{ project.projectPlaceholder }}" alt="{{ project.title }}" class="img-responsive img-fluid">
       <div class="project-container">
@@ -8,7 +8,9 @@
           {{ project.description }}<br>
           <span>{{ project.tags }}</span>
         </p>
-        <a [href]="project.projectUrl">Link to project</a>
+        <a target="_blank" [href]="project.projectUrl">
+          View site <span class="glyphicon glyphicon-new-window"></span>
+        </a>
       </div>
     </div>
     <!-- <div class="col-sm-6 project-img" 
