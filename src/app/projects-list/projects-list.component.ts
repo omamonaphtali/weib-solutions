@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 import { ProjectsModel } from './projects.model';
 import { ProjectService } from './projects.service';
@@ -9,8 +8,7 @@ import { ProjectService } from './projects.service';
   templateUrl: './projects-list.component.html',
   styleUrls: ['./projects-list.component.css'],
   providers: [
-    ProjectService,
-    NgbCarouselConfig
+    ProjectService
   ]
 })
 export class ProjectsListComponent implements OnInit {
@@ -19,13 +17,7 @@ export class ProjectsListComponent implements OnInit {
 
   constructor(
     private projService: ProjectService,
-    config: NgbCarouselConfig
-    ) {
-      config.interval = 3000;
-      config.wrap = true;
-      config.keyboard = false;
-      config.pauseOnHover = false;
-     }
+    ) { }
 
   ngOnInit() {
     this.projects = this.projService.getProjectList();
