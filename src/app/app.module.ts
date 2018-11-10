@@ -11,6 +11,8 @@ import { ServicesComponent } from './services/services.component';
 import { ServicesDetailComponent } from './services/services-detail/services-detail.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { StartProjectComponent } from './start-project/start-project.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DropdownDirective } from './shared/dropdown.directive';
     ServicesComponent,
     ServicesDetailComponent,
     HeaderComponent,
-    DropdownDirective
+    DropdownDirective,
+    StartProjectComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

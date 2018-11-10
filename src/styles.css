@@ -99,6 +99,12 @@ a:hover {
     line-height: 60px;
     color: #ffffff;
 }
+
+#new-project {
+    padding: 20px;
+    background-color: #29a3a3;
+    color: #ffffff;
+}
 @media screen and (max-width: 767px) {
  
 }
@@ -107,5 +113,6 @@ a:hover {
     .mini {
       visibility: hidden;
     }
-
+    #new-project div, #new-project .btn {display: inline-block;}
+    #new-project .btn {float: right;}
 }

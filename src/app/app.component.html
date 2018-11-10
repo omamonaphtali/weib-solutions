@@ -1,110 +1,32 @@
-<section>
-  <app-header></app-header>
-  <!-- <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div> -->
-  <div class="row banner">
-    <div class="banner-text">
-      <h2>We design and develop intelligent applications and software that are user-friendly</h2>
-      <p>By partnering with Weib, you partner with a team that supports your project from start to finish.</p>
-      <a href="#" class="btn btn-outline-primary">Learn More</a>
-      <a href="#" class="btn btn-outline-primary-b">View Our Work</a>
-    </div>
-  </div>
-</section>
-<div class="banner-footer">
-  <div class="banner-4">
-    <h4>Product Strategy</h4>
-    <p>We are goal oriented and focused in defining a vision for impact and a plan to get you there</p>
-    <ul>
-      <li>Branding |</li>
-      <li>Project Discovery |</li>
-      <li>Project Roadmap</li>
-    </ul>
-  </div>
-  <div class="banner-4">
-    <h4>Design</h4>
-    <p>We embrace the art of problem solving and create experiences that are not only beautiful, but also functional</p>
-    <ul>
-      <li>Product Design |</li>
-      <li>Prototyping |</li>
-      <li>User Experience</li>
-    </ul>
-  </div>
-  <div class="banner-4">
-    <h4>Development</h4>
-    <p>Our agile team works round the clock to bring agile experiences: from front-end to back-end</p>
-    <ul>
-      <li>Web |</li>
-      <li>Data Science |</li>
-      <li>Network |</li>
-      <li>IoT</li>
-    </ul>
-  </div>
-</div>
-
-<section id="about">
-  <h3 class="big-title">About Us</h3>
-  <div class="row">
-    <div class="col-sm-6">
-      <!-- <img src="" alt="about us placeholder"> -->
-    </div>
-    <div class="col-sm-6">
-      <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.</p>
-      <a href="#">Learn More</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h3 class="big-title">Our Portfolio</h3>
-  <div class="row">
-    <app-projects-list></app-projects-list>
-  </div>
-</section>
-
-<section>
-  <h3 class="big-title">Our Services</h3>
-  <div class="row">
-    <app-services></app-services>
-  </div>
-</section>
-
-<div id="new-project">
-  <div>
-    <h4>Have a project in mind?</h4>
-    <p>Some people believe that design is how it looks. Well, it is also how it works</p>
-  </div>
-  <a type="button" class="btn btn-outline-primary" href="#">START A NEW PROJECT</a>
-</div>
-
-<footer class="row">
+<div class="row">
   <div class="col-xs-12">
-    <a routerLink="/" class="big-title"><h3>WEIB SOLUTIONS</h3></a>
-    <p>&copy; Weib Solutions | Rights Reserved</p>
-  </div>
-</footer>
+      <app-header></app-header>
 
-<!-- FIXED RESPONSIVE BOTTOM NAVBAR WHEN SCREEN IS SMALL -->
-<div class="row mini">
-  <nav class="nav nav-pills nav-fill">
-    <a class="nav-item nav-link" routerLinkActive="active" routerLink="/">
-      <span class="glyphicon glyphicon-home"></span>
-    </a>
-    <a class="nav-item nav-link" routerLinkActive="active" routerLink="/">
-      <span class="glyphicon glyphicon-info-sign"></span>
-    </a>
-    <a class="nav-item nav-link" routerLinkActive="active" routerLink="/">
-      <span class="glyphicon glyphicon-cog"></span>
-    </a>
-    <a class="nav-item nav-link" routerLinkActive="active" routerLink="/">
-      <span class="glyphicon glyphicon-earphone"></span>
-    </a>
-  </nav>
+      <router-outlet></router-outlet>
+    
+      <footer class="row">
+        <div class="col-xs-12">
+          <a routerLink="/" class="big-title"><h3>WEIB SOLUTIONS</h3></a>
+          <p>&copy; Weib Solutions | Rights Reserved</p>
+        </div>
+      </footer>
+    
+      <!-- FIXED RESPONSIVE BOTTOM NAVBAR WHEN SCREEN IS SMALL -->
+      <div class="row mini">
+        <nav class="nav nav-pills nav-fill">
+          <a class="nav-item nav-link" routerLinkActive="active" routerLink="/">
+            <span class="glyphicon glyphicon-home"></span>
+          </a>
+          <a class="nav-item nav-link" routerLinkActive="active" routerLink="/about">
+            <span class="glyphicon glyphicon-info-sign"></span>
+          </a>
+          <a class="nav-item nav-link" routerLinkActive="active" routerLink="/our-services">
+            <span class="glyphicon glyphicon-cog"></span>
+          </a>
+          <a class="nav-item nav-link" routerLinkActive="active" routerLink="/contact">
+            <span class="glyphicon glyphicon-earphone"></span>
+          </a>
+        </nav>
+      </div>
+  </div>
 </div>
